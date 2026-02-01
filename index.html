@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Question 💌</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #ffe6ee;
+    }
+    button {
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 18px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    .no {
+      background-color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 One Question 💖</h1>
+  <h2>Will you be my Valentine?</h2>
+
+  <button class="yes" onclick="yesClicked()">Yes 💕</button>
+  <button class="no" onclick="noClicked()">No 🙂</button>
+
+  <p id="response" style="font-size:20px;"></p>
+
+  <script>
+    function yesClicked() {
+      document.getElementById("response").innerHTML =
+        "You just made my day ❤️";
+    }
+
+    function noClicked() {
+      document.getElementById("response").innerHTML =
+        "That’s okay 😊 Thanks for being honest.";
+    }
+  </script>
+
+</body>
+</html>
